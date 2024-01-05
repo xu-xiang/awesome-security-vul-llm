@@ -4,7 +4,10 @@
 本项目通过大模型联动爬虫，检索Github上所有存有有价值漏洞信息与漏洞POC或规则信息的项目，并自动识别项目的目录结构、Readme信息后进行总结分析并分类，所汇总的项目可以帮助安全行业从业者收集漏洞信息、POC信息、规则等。
 
 ## LLM分析过程
-LLM采集与分析源码后续补充
+1. 基于 [GithubGather](https://github.com/xu-xiang/GithubGather) 使用Token代理池遍历爬取Github项目数据
+2. 基于 [aiflows](https://github.com/xu-xiang/aiflows) 对爬取到的数据进行LLM分析，产出结果
+
+详细方案会在 aiflows 中更新，目前尚未完成
 
 # 安全学习与资源
 - [zongdeiqianxing/WebSecurityArticles](https://github.com/zongdeiqianxing/WebSecurityArticles) ![GitHub stars](https://img.shields.io/github/stars/zongdeiqianxing/WebSecurityArticles?style=flat-square)  - 包含多个网络安全高质量文章的Markdown文档集合，提供Web安全的学习资源
